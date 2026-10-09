@@ -38,3 +38,7 @@ Report bugs and suggest improvements through [GitHub Issues](https://github.com/
 ## Author
 
 Welnim
+
+## License
+
+Licensed under the [GNU General Public License v3.0](LICENSE).
