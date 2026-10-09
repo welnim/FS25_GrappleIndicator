@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="114" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/modDesc.xsd">
+    <author>Welnim</author>
+    <version>1.0.1.0</version>
+    <title>
+        <en>Grapple Indicator</en>
+    </title>
+    <description>
+        <en><![CDATA[Adds a position indicator for supported log grapples on the controlled vehicle and its attachments.
+Press Left Ctrl + G to toggle the marker beneath the tracked grapple.
+The toggle is available only when a supported grapple is detected.
+Activation is remembered separately for each vehicle during the current session.
+Choose the marker style, indicator color and optional vertical beam in General Settings under Grapple Indicator.
+
+Multiplayer is supported.
+Each player controls their own indicator, other players don't see it.
+
+GitHub: https://github.com/welnim/FS25_GrappleIndicator
+
+Changelog 1.0.1.0:
+- Added multiplayer support with independent player preferences.]]></en>
+        <de><![CDATA[Fügt eine Positionsanzeige für unterstützte Holzgreifer am gesteuerten Fahrzeug und seinen Anbaugeräten hinzu.
+Mit Strg links + G lässt sich die Markierung unter dem Greifer ein- und ausschalten.
+Die Funktion ist nur bei erkanntem Greifer verfügbar.
+Der Ein/Aus-Zustand wird pro Fahrzeug für die aktuelle Spielsitzung gemerkt.
+Markierungsform, Farbe und optionale senkrechte Linie können in den allgemeinen Einstellungen unter Grapple Indicator gewählt werden.
+
+Mehrspieler wird unterstützt.
+Jeder Spieler steuert seine eigene Anzeige, andere Spieler sehen sie nicht.
+
+GitHub: https://github.com/welnim/FS25_GrappleIndicator
+
+Changelog 1.0.1.0:
+- Mehrspieler-Unterstützung mit unabhängigen Spielereinstellungen hinzugefügt.]]></de>
+    </description>
+    <iconFilename>icon_GrappleIndicator.dds</iconFilename>
+    <multiplayer supported="true" />
+    <extraSourceFiles>
+        <sourceFile filename="scripts/GrappleIndicator.lua" />
+    </extraSourceFiles>
+    <actions>
+        <action name="GRAPPLE_INDICATOR_TOGGLE" category="VEHICLE" axisType="HALF" displayCategory="VEHICLE" />
+    </actions>
+    <inputBinding>
+        <actionBinding action="GRAPPLE_INDICATOR_TOGGLE">
+            <binding device="KB_MOUSE_DEFAULT" input="KEY_lctrl KEY_g" />
+        </actionBinding>
+    </inputBinding>
+    <l10n>
+        <text name="input_GRAPPLE_INDICATOR_TOGGLE">
+            <en>Toggle Grapple Indicator</en>
+            <de>Greiferanzeige umschalten</de>
+        </text>
+        <text name="gi_settingsTitle">
+            <en>Grapple Indicator</en>
+            <de>Grapple Indicator</de>
+        </text>
+        <text name="gi_markerStyleLabel">
+            <en>Marker style</en>
+            <de>Markierungsform</de>
+        </text>
+        <text name="gi_markerStyleTooltip">
+            <en>Choose a flat dot, screen-facing dot or circle. Appearance settings apply immediately and are saved. Each vehicle remembers its on/off state only for the current session.</en>
+            <de>Flacher Punkt, zur Kamera ausgerichteter Punkt oder Kreis. Darstellungsoptionen werden sofort übernommen und gespeichert. Der Ein/Aus-Zustand wird pro Fahrzeug nur für die aktuelle Spielsitzung gemerkt.</de>
+        </text>
+        <text name="gi_styleFlatDot">
+            <en>Flat dot</en>
+            <de>Flacher Punkt</de>
+        </text>
+        <text name="gi_styleScreenDot">
+            <en>Screen-facing dot</en>
+            <de>Zur Kamera ausgerichteter Punkt</de>
+        </text>
+        <text name="gi_styleCircle">
+            <en>Circle</en>
+            <de>Kreis</de>
+        </text>
+        <text name="gi_verticalBeamLabel">
+            <en>Vertical beam</en>
+            <de>Senkrechte Linie</de>
+        </text>
+        <text name="gi_verticalBeamTooltip">
+            <en>Draw a vertical line from the tracked grapple down to the surface indicator using the selected marker color. Disabled by default. Changes apply immediately and are saved for future sessions.</en>
+            <de>Zeigt eine senkrechte Linie vom Greifer zur Markierung in der gewählten Farbe. Standardmäßig ausgeschaltet. Änderungen werden sofort übernommen und gespeichert.</de>
+        </text>
+        <text name="gi_optionOff">
+            <en>Off</en>
+            <de>Aus</de>
+        </text>
+        <text name="gi_optionOn">
+            <en>On</en>
+            <de>Ein</de>
+        </text>
+        <text name="gi_markerColorLabel">
+            <en>Indicator color</en>
+            <de>Anzeigefarbe</de>
+        </text>
+        <text name="gi_markerColorTooltip">
+            <en>Choose the color of the marker and vertical beam. Changes apply immediately and are saved for future sessions.</en>
+            <de>Farbe für die Markierung und die senkrechte Linie. Änderungen werden sofort übernommen und gespeichert.</de>
+        </text>
+        <text name="gi_color_green">
+            <en>Green</en>
+            <de>Grün</de>
+        </text>
+        <text name="gi_color_white">
+            <en>White</en>
+            <de>Weiß</de>
+        </text>
+        <text name="gi_color_yellow">
+            <en>Yellow</en>
+            <de>Gelb</de>
+        </text>
+        <text name="gi_color_orange">
+            <en>Orange</en>
+            <de>Orange</de>
+        </text>
+        <text name="gi_color_red">
+            <en>Red</en>
+            <de>Rot</de>
+        </text>
+        <text name="gi_color_cyan">
+            <en>Cyan</en>
+            <de>Türkis</de>
+        </text>
+        <text name="gi_color_blue">
+            <en>Blue</en>
+            <de>Blau</de>
+        </text>
+        <text name="gi_color_magenta">
+            <en>Magenta</en>
+            <de>Magenta</de>
+        </text>
+        <text name="gi_enableIndicator">
+            <en>Enable indicator</en>
+            <de>Anzeige einschalten</de>
+        </text>
+        <text name="gi_disableIndicator">
+            <en>Disable indicator</en>
+            <de>Anzeige ausschalten</de>
+        </text>
+        <text name="gi_diagnosticsLabel">
+            <en>Diagnostic logging</en>
+            <de>Diagnoseprotokoll</de>
+        </text>
+        <text name="gi_diagnosticsTooltip">
+            <en>Write detailed detection information to log.txt for troubleshooting. Off by default. This preference is saved.</en>
+            <de>Schreibt detaillierte Informationen zur Greifererkennung zur Fehlersuche in log.txt. Standardmäßig ausgeschaltet. Diese Einstellung wird gespeichert.</de>
+        </text>
+    </l10n>
+</modDesc>
