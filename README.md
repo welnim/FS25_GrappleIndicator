@@ -10,7 +10,7 @@ A Farming Simulator 25 mod that adds a customizable position indicator for suppo
 - Save appearance settings between sessions.
 - Remember each vehicle's indicator on/off state during the current session.
 - Multiplayer support: each player controls their own indicator, which other players cannot see.
-- English and German translations.
+- English, German, and French translations.
 
 ## Usage
 

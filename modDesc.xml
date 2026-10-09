@@ -4,6 +4,7 @@
     <version>1.0.1.0</version>
     <title>
         <en>Grapple Indicator</en>
+        <fr>Grapple Indicator</fr>
     </title>
     <description>
         <en><![CDATA[Adds a position indicator for supported log grapples on the controlled vehicle and its attachments.
@@ -32,6 +33,19 @@ GitHub: https://github.com/welnim/FS25_GrappleIndicator
 
 Changelog 1.0.1.0:
 - Mehrspieler-Unterstützung mit unabhängigen Spielereinstellungen hinzugefügt.]]></de>
+        <fr><![CDATA[Ajoute un indicateur de position pour les grappins à bois compatibles du véhicule contrôlé et de ses équipements attelés.
+Appuyez sur Ctrl gauche + G pour afficher ou masquer le repère sous le grappin.
+Cette fonction est disponible uniquement lorsqu’un grappin compatible est détecté.
+L’état activé ou désactivé est mémorisé séparément pour chaque véhicule pendant la session en cours.
+Dans les paramètres généraux, sous « Grapple Indicator », choisissez le style du repère, sa couleur et l’affichage d’un faisceau vertical.
+
+Compatible multijoueur.
+Chaque joueur contrôle son propre indicateur, qui reste invisible pour les autres joueurs.
+
+GitHub: https://github.com/welnim/FS25_GrappleIndicator
+
+Journal des modifications 1.0.1.0 :
+- Ajout de la prise en charge du multijoueur avec des préférences indépendantes pour chaque joueur.]]></fr>
     </description>
     <iconFilename>icon_GrappleIndicator.dds</iconFilename>
     <multiplayer supported="true" />
@@ -50,102 +64,127 @@ Changelog 1.0.1.0:
         <text name="input_GRAPPLE_INDICATOR_TOGGLE">
             <en>Toggle Grapple Indicator</en>
             <de>Greiferanzeige umschalten</de>
+            <fr>Afficher/masquer l’indicateur du grappin</fr>
         </text>
         <text name="gi_settingsTitle">
             <en>Grapple Indicator</en>
             <de>Grapple Indicator</de>
+            <fr>Grapple Indicator</fr>
         </text>
         <text name="gi_markerStyleLabel">
             <en>Marker style</en>
             <de>Markierungsform</de>
+            <fr>Style du repère</fr>
         </text>
         <text name="gi_markerStyleTooltip">
             <en>Choose a flat dot, screen-facing dot or circle. Appearance settings apply immediately and are saved. Each vehicle remembers its on/off state only for the current session.</en>
             <de>Flacher Punkt, zur Kamera ausgerichteter Punkt oder Kreis. Darstellungsoptionen werden sofort übernommen und gespeichert. Der Ein/Aus-Zustand wird pro Fahrzeug nur für die aktuelle Spielsitzung gemerkt.</de>
+            <fr>Choisissez un point à plat, un point orienté vers la caméra ou un cercle. Les paramètres d’apparence sont appliqués immédiatement et enregistrés. L’état activé ou désactivé de chaque véhicule est mémorisé uniquement pour la session en cours.</fr>
         </text>
         <text name="gi_styleFlatDot">
             <en>Flat dot</en>
             <de>Flacher Punkt</de>
+            <fr>Point à plat</fr>
         </text>
         <text name="gi_styleScreenDot">
             <en>Screen-facing dot</en>
             <de>Zur Kamera ausgerichteter Punkt</de>
+            <fr>Point orienté vers la caméra</fr>
         </text>
         <text name="gi_styleCircle">
             <en>Circle</en>
             <de>Kreis</de>
+            <fr>Cercle</fr>
         </text>
         <text name="gi_verticalBeamLabel">
             <en>Vertical beam</en>
             <de>Senkrechte Linie</de>
+            <fr>Faisceau vertical</fr>
         </text>
         <text name="gi_verticalBeamTooltip">
             <en>Draw a vertical line from the tracked grapple down to the surface indicator using the selected marker color. Disabled by default. Changes apply immediately and are saved for future sessions.</en>
             <de>Zeigt eine senkrechte Linie vom Greifer zur Markierung in der gewählten Farbe. Standardmäßig ausgeschaltet. Änderungen werden sofort übernommen und gespeichert.</de>
+            <fr>Trace une ligne verticale du grappin jusqu’au repère sur la surface, dans la couleur choisie. Désactivé par défaut. Les modifications sont appliquées immédiatement et enregistrées pour les prochaines sessions.</fr>
         </text>
         <text name="gi_optionOff">
             <en>Off</en>
             <de>Aus</de>
+            <fr>Désactivé</fr>
         </text>
         <text name="gi_optionOn">
             <en>On</en>
             <de>Ein</de>
+            <fr>Activé</fr>
         </text>
         <text name="gi_markerColorLabel">
             <en>Indicator color</en>
             <de>Anzeigefarbe</de>
+            <fr>Couleur de l’indicateur</fr>
         </text>
         <text name="gi_markerColorTooltip">
             <en>Choose the color of the marker and vertical beam. Changes apply immediately and are saved for future sessions.</en>
             <de>Farbe für die Markierung und die senkrechte Linie. Änderungen werden sofort übernommen und gespeichert.</de>
+            <fr>Choisissez la couleur du repère et du faisceau vertical. Les modifications sont appliquées immédiatement et enregistrées pour les prochaines sessions.</fr>
         </text>
         <text name="gi_color_green">
             <en>Green</en>
             <de>Grün</de>
+            <fr>Vert</fr>
         </text>
         <text name="gi_color_white">
             <en>White</en>
             <de>Weiß</de>
+            <fr>Blanc</fr>
         </text>
         <text name="gi_color_yellow">
             <en>Yellow</en>
             <de>Gelb</de>
+            <fr>Jaune</fr>
         </text>
         <text name="gi_color_orange">
             <en>Orange</en>
             <de>Orange</de>
+            <fr>Orange</fr>
         </text>
         <text name="gi_color_red">
             <en>Red</en>
             <de>Rot</de>
+            <fr>Rouge</fr>
         </text>
         <text name="gi_color_cyan">
             <en>Cyan</en>
             <de>Türkis</de>
+            <fr>Cyan</fr>
         </text>
         <text name="gi_color_blue">
             <en>Blue</en>
             <de>Blau</de>
+            <fr>Bleu</fr>
         </text>
         <text name="gi_color_magenta">
             <en>Magenta</en>
             <de>Magenta</de>
+            <fr>Magenta</fr>
         </text>
         <text name="gi_enableIndicator">
             <en>Enable indicator</en>
             <de>Anzeige einschalten</de>
+            <fr>Activer l’indicateur</fr>
         </text>
         <text name="gi_disableIndicator">
             <en>Disable indicator</en>
             <de>Anzeige ausschalten</de>
+            <fr>Désactiver l’indicateur</fr>
         </text>
         <text name="gi_diagnosticsLabel">
             <en>Diagnostic logging</en>
             <de>Diagnoseprotokoll</de>
+            <fr>Journal de diagnostic</fr>
         </text>
         <text name="gi_diagnosticsTooltip">
             <en>Write detailed detection information to log.txt for troubleshooting. Off by default. This preference is saved.</en>
             <de>Schreibt detaillierte Informationen zur Greifererkennung zur Fehlersuche in log.txt. Standardmäßig ausgeschaltet. Diese Einstellung wird gespeichert.</de>
+            <fr>Écrit des informations détaillées sur la détection des grappins dans log.txt pour faciliter le dépannage. Désactivé par défaut. Ce paramètre est enregistré.</fr>
         </text>
     </l10n>
 </modDesc>
