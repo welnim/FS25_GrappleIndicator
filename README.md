@@ -18,6 +18,20 @@ Enter a vehicle with a supported log grapple and press **Left Ctrl + G** to togg
 
 Open **General Settings → Grapple Indicator** to change the marker style, color, and vertical beam. Diagnostic logging can also be enabled there for troubleshooting.
 
+## Screenshots
+
+Position indicator with the vertical beam enabled.
+
+![Grapple position marker and vertical beam above a pile of logs](screenshots/FS25_GrappleIndicator_1.jpg)
+
+Circle marker viewed from inside the cab.
+
+![Circle marker beneath the grapple, viewed from the vehicle cab](screenshots/FS25_GrappleIndicator_2.jpg)
+
+Customize the indicator in General Settings.
+
+![Grapple Indicator settings for marker style, vertical beam, indicator color, and diagnostic logging](screenshots/FS25_GrappleIndicator_3.jpg)
+
 ## Installation from source
 
 1. Download or clone this repository.
